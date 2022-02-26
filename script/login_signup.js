@@ -197,7 +197,7 @@ document
     }
   });
 
-  var user_detail=JSON.parse(localStorage.getItem("user_detail")) || "";
+ 
    // signup
  let register_data;
  async function Register(event){
@@ -228,8 +228,6 @@ document
             window.location.href="signup.html";
         }else{
             alert('Registration Successful,Please login')
-            user_detail=data.token;
-            localStorage.setItem("user_detail",JSON.stringify(user_detail));
             display();
         }
       }else{
