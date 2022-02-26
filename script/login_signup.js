@@ -199,7 +199,7 @@ document
 
   var user_detail=JSON.parse(localStorage.getItem("user_detail")) || "";
    // signup
- 
+ let register_data;
  async function Register(event){
       try{
           event.preventDefault();
